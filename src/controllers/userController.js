@@ -1,5 +1,5 @@
-import userInfoService from '../services/userService';
-
+import UserInfoService from '../services/userService';
+const userInfoService = new UserInfoService();
 class UserController {
   async getUserInfo( ctx ) {
     let result = {

@@ -1,4 +1,5 @@
-import userHelper from '../dbHelper/userHelper';
+import UserHelper from '../dbHelper/userHelper';
+const userHelper = new UserHelper();
 class UserService {
   async getUserInfo() {
     console.log(Date());
@@ -12,4 +13,4 @@ class UserService {
   }
 };
 
-export default new UserService();
+export default UserService;

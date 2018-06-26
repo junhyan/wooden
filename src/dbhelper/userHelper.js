@@ -1,5 +1,5 @@
 import User from '../models/user';
-class UserHelper {
+export default class UserHelper {
     async getUserInfo() {
         let query = User.find({});
         let res = null
@@ -7,4 +7,3 @@ class UserHelper {
         return res;
     }
 }
-export default new UserHelper();

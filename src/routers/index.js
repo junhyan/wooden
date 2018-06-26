@@ -1,4 +1,4 @@
 import Router from 'koa-router';
-import api from './api';
+import user from './user';
 
-export default new Router().use('/api', api.routes(), api.allowedMethods());
+export default new Router().use('/user', user.routes(), user.allowedMethods());
