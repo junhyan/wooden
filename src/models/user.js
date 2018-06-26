@@ -3,7 +3,10 @@ import dbHandler from '../dbHandler/dbHandler';
 var Schema = dbHandler.Schema;
 
 var UserSchema = new Schema({
-	phone:  String,
+	phone: {
+        type: String,
+        unique: true 
+    },
     name: String
 },
 {
